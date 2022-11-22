@@ -1,0 +1,23 @@
+//Cálculo de Idade
+INICIAR ALGORITIMO
+   DECLARAR VARIÁVEIS ANO_NASCIMENTO = 1996, ANO_ATUAL = pegarAno,IDADE_ATUAL = ANO_ATUAL - ANO_NASCIMENTO
+
+   MOSTRAR NA TELA: MINHA IDADE É: (IDADE_ATUAL)
+
+
+FIM ALGORITIMO
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Cálculo de Idade dinâmico
+INICIAR ALGORITIMO
+   DECLARAR VARIÁVEIS ANO_NASCIMENTO,ANO_ATUAL;
+
+   RECEBER VARIÁVEL (ANO_NASCIMENTO DO USUÁRIO);
+   
+   DECLARAR VARIÁVEL IDADE ATUAL = ANO_ATUAL - ANO_NASCIMENTO;
+
+   MOSTRAR NA TELA: MINHA IDADE É: (IDADE_ATUAL);
+
+
+FIM ALGORITIMO

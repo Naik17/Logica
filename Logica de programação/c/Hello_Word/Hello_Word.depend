@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1669054885 source:c:\users\elion\desktop\logica de programação\hello_word\main.c
+	<stdio.h>
+	<stdlib.h>
+

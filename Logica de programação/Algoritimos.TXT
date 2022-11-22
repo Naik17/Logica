@@ -1,0 +1,36 @@
+//Algoritimo Para Entrar no Cinema! Sem Restrições
+
+
+Iniciar Algoritimo
+
+  Declarar Variáveis Horario_Filme,Horario_Atual
+
+  Se Horario_Atual >= Horario_filme
+
+  --Podemos Entar!
+
+   Caso Contrário
+
+   --Vamos Esperar
+  
+Finalizar algoritimo
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Algoritimo Para Entrar no Cinema! Com Restrições
+
+
+Iniciar Algoritimo
+
+  Declarar Variáveis Horario_Filme,Horario_Atual
+
+  Se Horario_Atual >= Horario_filme E Horario_Atual <= Horario_Filme + 30
+
+  --Podemos Entar!
+
+   Caso Contrário
+
+   --Vamos Esperar
+  
+Finalizar algoritimo
