@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1669226229 source:c:\users\elion\desktop\logica de programação\aula_7\main.c
+	<stdio.h>
+	<stdlib.h>
+
