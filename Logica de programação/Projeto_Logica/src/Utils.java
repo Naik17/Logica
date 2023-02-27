@@ -1,10 +1,12 @@
 
-public class Utils {
+public abstract class Utils {
 	
-	public static int numero = 10;
+	public void teste() {
+		
+	}
 	
-	public  void HelloWorld() {
-		System.out.println("Hello World!");
+	public static void teste2() {
+		
 	}
 
 }
