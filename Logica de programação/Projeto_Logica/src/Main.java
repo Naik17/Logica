@@ -7,35 +7,50 @@ public class Main{
 	
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner (System.in);
-		double tempoAntigo = System.currentTimeMillis();
-		String s = scanner.nextLine();
-		
-		if(Main.convertTime(System.currentTimeMillis() - tempoAntigo) >= 2){
-			if(s.length() >= 10) {
-			System.out.println(s);
-			
-			}else {
-				System.out.println("Sua mensagem e muito curta!");
-				
-			 }
-			}else {
-				System.out.println("Ops ! Você precisa esperar pelo menos 2 min");
-				System.out.println("Vamos tentar novamente?");
-				tempoAntigo = System.currentTimeMillis();
-				s = scanner.nextLine();
-				if(Main.convertTime(System.currentTimeMillis() - tempoAntigo) >= 2) {
-					System.out.println("Agora sim!");
-					
+		int pontos = 0;
+		System.out.println("Bem-Vindo! Pressuone S para continuar.");
+		String string = scanner.nextLine();
+		if(string.equals("s")) {
+			System.out.println("Qual a capital do Brasil?");
+			string = scanner.nextLine();
+			if(string.equals("Brasilia")){
+				pontos++;
+				System.out.println("Voce pontuou!");
+				System.out.println("Voce deseja continuar? (s) ou desistir? (d)");
+				string = scanner.nextLine();
+				if(string.equals("s")) {
+					//proxima pergunta
+					System.out.println("Em qual continente fica o Brasil");
+					string = scanner.nextLine();
+					if(string.equals("America")) {
+						pontos++;
+						System.out.println("Voce pontuou!");
+						System.out.println("Voce deseja continuar? (s) ou desistir? (d)");
+						string = scanner.nextLine();
+						if(string.equals("s")) {
+							//proxima pergunta
+							System.out.println("Em qual America fica o Brasil?");
+							string = scanner.nextLine();
+							if(string.equals("America do Sul")) {
+								pontos++;
+								System.out.println("Voce pontuou!");
+								System.out.println("Voce chegou ao final do jogo, sua pontuacao final e de:"+pontos);
+								}else {
+									System.out.println("Game Over! Sua pontuacao foi de: "+pontos);
+								}
+								
+						}else {
+							System.out.println("Game Over! Sua pontuacao foi de: "+pontos);
+						}
+					}
 				}else {
-					System.out.println("Você falhou 2x, programa ira encerrar");
+					System.out.println("Game Over! Sua pontuacao foi de: "+pontos);
 				}
-			
-			
+			}else {
+				System.out.println("Game Over! Sua pontuacao foi de: "+pontos);
+			}
+		}else {
+			System.out.println("Acabou o jogo .... Voce pontou: 0");
 		}
-
 	}
-	
-	public static double convertTime(double tempo) {
-		return tempo /1000;
-	}
-}
+  }
